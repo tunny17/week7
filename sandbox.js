@@ -2,6 +2,7 @@
 const slides = document.querySelectorAll(".slide");
 const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
+let slider = document.querySelector(".slider");
 
 slides.forEach((slide, indx) => {
   slide.style.transform = `translateX(${indx * 100}%)`;

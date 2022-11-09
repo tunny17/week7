@@ -18,13 +18,17 @@ body {
     overflow: hidden;
     border-radius: 15px;
 }
+
+.slider:hover .btn {
+    visibility: visible;
+}
   
 .slide {
     width: 100%;
     max-width: 800px;
     height: 350px;
     position: absolute;
-    transition: all 1s;
+    transition: all 1.1s;
 }
   
 .slide img {
@@ -44,6 +48,7 @@ body {
     cursor: pointer;
     background-color: #fff;
     font-size: 18px;
+    transition: 0.1s ease-in-out;
 }
   .btn:active {
     transform: scale(1.1);
@@ -51,10 +56,12 @@ body {
 .btn-prev {
     top: 45%;
     left: 2%;
+    visibility: hidden;
 }
   
 .btn-next {
     top: 45%;
     right: 2%;
+    visibility: hidden;
 }
   
